@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffde7;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    background-color: #fff9c4;
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border: 1px solid #f9e79f;
+}
+
+h1 {
+    color: #7d6608;
+}
+
+.subjudul {
+    color: #7d6608;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    width: 250px;
+    font-size: 16px;
+    border: 1px solid #f0d45e;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bold;
+    color: #7d6608;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: #f4c10f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d4ac0d;
+}
+
+.hasil-box {
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border: 1px solid #f9e79f;
+}
+
+.hasil-box p {
+    color: #7d6608;
+}
+
+.hasil-box h2 {
+    color: #b7950b;
+}
+
+.caption {
+    background-color: #f4c10f;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    color: #7d6608;
+    font-weight: bold;
+}
