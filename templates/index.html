@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>PintarBelanja</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>PintarBelanja</h1>
+        <p class="subjudul">Mau Hemat? Yuk Hitung Dulu Diskonnya!</p>
+        <form action="/hitung" method="POST">
+            <label>Nama Barang:</label>
+            <input type="text" name="nama_barang" placeholder="contoh: Sepatu Nike" required>
+
+            <label>Harga Asli (Rp):</label>
+            <input type="number" name="harga_asli" placeholder="contoh: 300000" required>
+
+            <label>Persentase Diskon (%):</label>
+            <input type="number" name="persen_diskon" placeholder="contoh: 20" required>
+
+            <button type="submit">Hitung Diskon</button>
+        </form>
+    </div>
+</body>
+</html>

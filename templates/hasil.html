@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>PintarBelanja</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>PintarBelanja</h1>
+        <p class="subjudul">Hasil Perhitungan Diskonmu</p>
+        <div class="hasil-box">
+            <p><strong>Nama Barang:</strong> {{ nama_barang }}</p>
+            <p><strong>Harga Asli:</strong> Rp {{ "{:,.0f}".format(harga_asli) }}</p>
+            <p><strong>Diskon:</strong> {{ persen_diskon }}%</p>
+            <p><strong>Potongan Harga:</strong> Rp {{ "{:,.0f}".format(potongan) }}</p>
+            <h2>Harga Akhir: Rp {{ "{:,.0f}".format(harga_akhir) }}</h2>
+        </div>
+        <div class="caption">
+            Selamat! Kamu bisa membeli <strong>{{ nama_barang }}</strong> 
+            dengan harga <strong>Rp {{ "{:,.0f}".format(harga_akhir) }}</strong> saja!
+        </div>
+        <a href="/">Hitung Lagi</a>
+    </div>
+</body>
+</html>
