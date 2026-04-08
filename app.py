@@ -13,10 +13,12 @@ def index():
 
 @app.route('/hitung', methods=['POST'])
 def hitung():
+    nama_barang = request.form['nama_barang']
     harga_asli = float(request.form['harga_asli'])
     persen_diskon = float(request.form['persen_diskon'])
     potongan, harga_akhir = hitung_diskon(harga_asli, persen_diskon)
     return render_template('hasil.html',
+                           nama_barang=nama_barang,
                            harga_asli=harga_asli,
                            persen_diskon=persen_diskon,
                            potongan=potongan,
